@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofia — UI/UX Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500;600&family=Sacramento&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="nav" id="navbar" role="navigation" aria-label="Main navigation">
+  <a class="nav-logo" href="#home">Divya</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#practice">Practice</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" class="mob-link">Home</a>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#projects" class="mob-link">Projects</a>
+  <a href="#skills" class="mob-link">Skills</a>
+  <a href="#practice" class="mob-link">Practice</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home" aria-label="Hero">
+  <div class="petal petal-1" aria-hidden="true"></div>
+  <div class="petal petal-2" aria-hidden="true"></div>
+  <div class="petal petal-3" aria-hidden="true"></div>
+  <div class="petal petal-4" aria-hidden="true"></div>
+  <div class="hero-left">
+    <div class="hero-greeting reveal"><span class="dot"></span>Available for freelance work</div>
+    <h1 class="hero-headline reveal d1">Crafting <em>beautiful</em><br>digital <strong>experiences</strong></h1>
+    <p class="hero-intro reveal d2">I'm Divya Gupta,a UI/UX Designer who transforms complex ideas into intuitive, elegant interfaces that people genuinely enjoy using.</p>
+    <div class="hero-btns reveal d3">
+      <a href="#projects" class="btn-rose">View my work <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+      <a href="#contact" class="btn-ghost">Let's connect</a>
+    </div>
+  </div>
+  <div class="hero-right reveal-right d2" aria-hidden="true">
+    <div class="hero-img-main">
+        <img src ="images/Divya.jpeg" alt="Profile photo of Divya Gupta" class = "hero-profile-img"/>
+    </div>
+      <div class="hero-pill">Open to work ✦</div>
+      <div class="hero-badge">
+        <div class="badge-icon">✦</div>
+        <div class="badge-text"><strong>UI/UX Designer</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" aria-label="About me">
+  <p class="section-tag reveal">About me</p>
+  <h2 class="section-title reveal d1">Designing with <em>intention</em>,<br>building with empathy.</h2>
+  <div class="about-wrap">
+    <div class="about-img-col reveal-left">
+      <div class="about-frame" role="img" aria-label="Profile photo placeholder">
+        <div class="about-frame-inner">
+          <img src ="images/Learning-rafiki.svg" alt="Illustration of a person learning, representing the 'About me' section" class="about-profile-img"/>
+        </div>
+      </div>
+      <div class="about-deco-ring" aria-hidden="true"></div>
+      <div class="about-deco-dot" aria-hidden="true"></div>
+    </div>
+    <div class="about-content reveal-right">
+      <p class="about-bio">Hello! I'm divya — a UI/UX Designer with a deep passion for creating interfaces that feel as good as they look. I believe great design is invisible: when it works perfectly, users don't notice it — they just feel at ease.</p>
+      <p class="about-bio">As a first-year B.Tech student, I'm deeply interested in design and the art of crafting elegant, user-centered experiences. I'm constantly learning, experimenting, and improving my design thinking</p>
+      <div class="about-chips">
+        <span class="about-chip">User Research</span>
+        <span class="about-chip">Wireframing</span>
+        <span class="about-chip">Prototyping</span>
+        <span class="about-chip">Design Systems</span>
+        <span class="about-chip">Figma</span>
+        <span class="about-chip">Accessibility</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" aria-label="Selected projects">
+  <div class="projects-intro">
+    <div><p class="section-tag reveal">Projects</p><h2 class="section-title reveal d1">Work to <em>explore</em></h2></div>
+    <p class="section-sub reveal">UI/UX case studies — from user research to high-fidelity prototypes.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="proj-card wide reveal">
+      <article class="project-card">
+        <div class="card-visual cv-1">
+          <a href = "https://medium.com/@divya626343/designing-an-ai-powered-one-stop-platform-for-skills-careers-and-courses-8b3c53be6661" class = "card-banner-link">
+          <img src = "images/Udaan (1).png" alt = "banner for the project 'Udaan' showing a website mockup" class = "card-banner"/>
+          </a>
+          <span class="card-visual-label">Case Study 01 ✦</span></div>
+        <div class="card-body">
+          <p class="card-category">Website for learning · End-to-End Design</p>
+          <h3 class="card-title">Udaan — AI driven Learning Platform</h3>
+          <p class="card-desc">Led the full design cycle from user research and affinity mapping through lo-fi wireframes to a polished high-fidelity prototype with thoughtful micro-interactions and a calming visual language.</p>
+          <div class="card-tags"><span class="ctag">User Research</span><span class="ctag">Wireframing</span><span class="ctag">Prototyping</span><span class="ctag">Figma</span><span class="ctag">Accessibility</span></div>
+          <div class="card-footer">
+            <a href="https://medium.com/@divya626343/designing-an-ai-powered-one-stop-platform-for-skills-careers-and-courses-8b3c53be6661" class="card-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Case Study</a>
+        </div>
+      </article>
+    </div>
+    <div class="proj-card reveal d1">
+      <article class="project-card">
+        <div class="card-visual cv-2">
+          <a href = "https://medium.com/@divya626343/critical-ux-decisions-in-upi-apps-part-1-designing-for-speed-reachability-6878a045a8aa" class = "card-banner-link">
+          <img src = "images/UX Analysis (1).png" alt = "banner for the project 'ux analysis" class = "card-banner"/>
+          </a>
+          <span class="card-visual-label">Case Study 02 ✦</span></div>
+        <div class="card-body">
+          <p class="card-category">Critical UX thinking</p>
+          <h3 class="card-title">UX Decisions in UPI Apps</h3>
+          <p class="card-desc">design decisions focused on clarity, fast actions, and reducing cognitive load in data-heavy interfaces.</p>
+          <div class="card-tags"><span class="ctag">UX Design</span><span class="ctag">Data Viz</span><span class="ctag">Figma</span></div>
+          <div class="card-footer">
+            <a href="https://medium.com/@divya626343/critical-ux-decisions-in-upi-apps-part-1-designing-for-speed-reachability-6878a045a8aa" class="card-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>View Work</a></div>
+        </div>
+      </article>
+    </div>
+    <div class="proj-card half reveal">
+      <article class="project-card">
+        <div class="card-visual cv-3">
+          <a href = "https://medium.com/@divya626343/critical-ux-decisions-in-upi-apps-part-2-designing-for-clarity-trust-and-assurance-7706b61dc2d1" class = "card-banner-link">
+          <img src = "images/UX Analysis (1).png" alt = "banner for the project 'ux analysis part2" class = "card-banner"/>
+          </a>
+          <span class="card-visual-label">03 ✦</span></div>
+        <div class="card-body">
+          <p class="card-category">UX Design part 2</p>
+          <h3 class="card-title">UX Decisions in UPI Apps part 2</h3>
+          <p class="card-desc">continued analysis of UX decisions in UPI apps, focusing on accessibility and inclusive design.</p>
+          <div class="card-tags"><span class="ctag">Branding</span><span class="ctag">UX Writing</span><span class="ctag">Figma</span></div>
+          <div class="card-footer"><a href="https://medium.com/@divya626343/critical-ux-decisions-in-upi-apps-part-2-designing-for-clarity-trust-and-assurance-7706b61dc2d1" class="card-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Case Study</a></div>
+        </div>
+      </article>
+    </div>
+    <div class="proj-card half reveal">
+      <article class="project-card">
+        <div class="card-visual cv-4">
+          <a href = "https://medium.com/@divya626343/fundnest-a-personal-finance-allocation-app-case-study-cbdea064ca4c" class = "card-banner-link">
+          <img src = "images/Udaan (2).png" alt = "banner for the project 'banner for FundNest - Finance app'" class = "card-banner"/>
+          </a>
+          <span class="card-visual-label">04 ✦</span></div>
+        <div class="card-body">
+          <p class="card-category">FundNest - Finance app</p>
+          <h3 class="card-title">FundNest - Personal Finance Allocation App</h3>
+          <p class="card-desc">A case study on the design and development of FundNest, a personal finance allocation app.</p>
+          <div class="card-tags"><span class="ctag">Finance</span><span class="ctag">UI</span><span class="ctag">Figma</span></div>
+          <div class="card-footer"><a href="https://medium.com/@divya626343/fundnest-a-personal-finance-allocation-app-case-study-cbdea064ca4c" class="card-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>Case Study</a></div>
+        </div>
+      </article>
+    </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" aria-label="Skills and tools">
+  <p class="section-tag reveal">Skills</p>
+  <h2 class="section-title reveal d1">Tools &amp; <em>expertise</em></h2>
+  <p class="section-sub reveal d2">The skills and tools I use to research, design, and deliver great experiences.</p>
+  <div class="skills-wrap">
+
+    <div class="skill-category-block reveal">
+      <p class="skill-cat-label">UX Design</p>
+      <div class="skill-chips">
+        <div class="skill-chip"><div class="chip-icon rose-bg">🔍</div><div><span class="chip-name">User Research</span><span class="chip-sub">Interviews · Surveys</span></div></div>
+        <div class="skill-chip"><div class="chip-icon rose-bg">🗺️</div><div><span class="chip-name">Journey Mapping</span><span class="chip-sub">Flows · Touchpoints</span></div></div>
+        <div class="skill-chip"><div class="chip-icon rose-bg">📐</div><div><span class="chip-name">Wireframing</span><span class="chip-sub">Lo-fi · Hi-fi</span></div></div>
+        <div class="skill-chip"><div class="chip-icon rose-bg">🧪</div><div><span class="chip-name">Usability Testing</span><span class="chip-sub">Moderated · Unmoderated</span></div></div>
+        <div class="skill-chip"><div class="chip-icon rose-bg">🗂️</div><div><span class="chip-name">Information Architecture</span><span class="chip-sub">Sitemaps · Card Sorting</span></div></div>
+        <div class="skill-chip"><div class="chip-icon rose-bg">♿</div><div><span class="chip-name">Accessibility (WCAG)</span><span class="chip-sub">Inclusive Design</span></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category-block reveal d1">
+      <p class="skill-cat-label">UI Design</p>
+      <div class="skill-chips">
+        <div class="skill-chip"><div class="chip-icon mauve-bg">🎨</div><div><span class="chip-name">Visual Design</span><span class="chip-sub">Colour · Typography · Layout</span></div></div>
+        <div class="skill-chip"><div class="chip-icon mauve-bg">🧩</div><div><span class="chip-name">Design Systems</span><span class="chip-sub">Components · Tokens</span></div></div>
+        <div class="skill-chip"><div class="chip-icon mauve-bg">✨</div><div><span class="chip-name">Micro-interactions</span><span class="chip-sub">Motion · Transitions</span></div></div>
+        <div class="skill-chip"><div class="chip-icon mauve-bg">📱</div><div><span class="chip-name">Responsive Design</span><span class="chip-sub">Mobile-first · Adaptive</span></div></div>
+        <div class="skill-chip"><div class="chip-icon mauve-bg">✍️</div><div><span class="chip-name">UX Writing</span><span class="chip-sub">Copy · Microcopy</span></div></div>
+        <div class="skill-chip"><div class="chip-icon mauve-bg">🖼️</div><div><span class="chip-name">Branding &amp; Identity</span><span class="chip-sub">Logo · Guidelines</span></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category-block reveal d2">
+      <p class="skill-cat-label">Tools</p>
+      <div class="skill-chips">
+        <div class="skill-chip"><div class="chip-icon sage-bg">🟣</div><div><span class="chip-name">Figma</span><span class="chip-sub">Primary design tool</span></div></div>
+        <div class="skill-chip"><div class="chip-icon sage-bg">🧲</div><div><span class="chip-name">FigJam</span><span class="chip-sub">Whiteboarding · Ideation</span></div></div>
+        <div class="skill-chip"><div class="chip-icon sage-bg">📊</div><div><span class="chip-name">Notion</span><span class="chip-sub">Docs · Planning</span></div></div>
+        <div class="skill-chip"><div class="chip-icon sage-bg">🎬</div><div><span class="chip-name">Framer</span><span class="chip-sub">Animation · Motion</span></div></div>
+        <div class="skill-chip"><div class="chip-icon sage-bg">🔬</div><div><span class="chip-name">Maze / Hotjar</span><span class="chip-sub">Testing · Heatmaps</span></div></div>
+      </div>
+    </div>
+
+    <div class="skill-category-block reveal d3">
+      <p class="skill-cat-label">Basic Technical Understanding</p>
+      <div class="skill-chips">
+        <div class="skill-chip code-chip"><div class="chip-icon soft-bg">🌐</div><div><span class="chip-name">HTML</span><span class="chip-sub">Semantic markup · Structure</span></div></div>
+        <div class="skill-chip code-chip"><div class="chip-icon soft-bg">🎨</div><div><span class="chip-name">CSS</span><span class="chip-sub">Styling · Layouts · Animations</span></div></div>
+        <div class="skill-chip code-chip"><div class="chip-icon soft-bg">⚡</div><div><span class="chip-name">JavaScript</span><span class="chip-sub">Basic interactions · DOM</span></div></div>
+        <div class="skill-chip code-chip"><div class="chip-icon soft-bg">✂️</div><div><span class="chip-name">Design Handoff</span><span class="chip-sub">Dev-ready specs · figma files</span></div></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRACTICE -->
+<section id="practice" aria-label="Hands-on practice">
+  <p class="section-tag reveal">Practice</p>
+  <h2 class="section-title reveal d1">Learning in <em>public</em></h2>
+  <p class="section-sub reveal d2">Daily UI challenges, design experiments, and things I'm actively exploring.</p>
+  <div class="practice-grid">
+    <div class="practice-card practice-big">
+    <img src="images/design.png" alt="Project screen 1">
+   </div>
+
+    <div class="practice-card">
+    <img src="images/home page design.png" alt="Project screen 2">
+    </div>
+
+   <div class="practice-card">
+    <img src="images/Frame 1.png" alt="Project screen 3">
+   </div>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" aria-label="Contact">
+  <p class="section-tag reveal">Contact</p>
+  <h2 class="section-title reveal d1">Let's create something <em>lovely</em>.</h2>
+  <div class="contact-wrap">
+    <div class="contact-info reveal-left">
+      <h3>I'd love to hear from you</h3>
+      <p>Whether you have a project, a collaboration idea, or just want to say hello — my inbox is a warm and welcoming place.</p>
+        <div class="contact-detail-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg></div>
+        <span>divya.designanddev@gmail.com</span>
+      <div class="social-row">
+        <a href="https://medium.com/@divya626343" class="soc" aria-label="Medium"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h2v10H4V7zm5 0h2.5l2.3 6.5L16.1 7H19v10h-2v-6.8L14.8 17h-2l-2.2-6.8V17H9V7zm11-2h-4V3h4v2z"/></svg></a>
+    </div>
+    <form class="contact-form reveal-right"
+      action="https://formspree.io/f/mvzbyrda" id="contactForm" novalidate>
+      <div class="form-row">
+        <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" name="name" placeholder="Your name" required /></div>
+        <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" name="email" placeholder="your@email.com" required /></div>
+      </div>
+      <div class="form-group"><label for="fsubject">Subject</label><input type="text" id="fsubject" name="subject" placeholder="e.g. Project Collaboration" /></div>
+      <div class="form-group"><label for="fmessage">Message</label><textarea id="fmessage" name="message" rows="5" placeholder="Tell me about your project or idea…" required></textarea></div>
+      <button type="submit" class="btn-send">Send message <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+      <div class="form-success" id="formSuccess" role="status" aria-live="polite">✦ Thank you — I'll be in touch soon!</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <span>Designed with</span><span class="heart">♥</span><span>by <strong>Divya</strong> · 2025</span>
+</footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
