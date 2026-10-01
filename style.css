@@ -1092,6 +1092,7 @@ footer strong {
   .proj-card.half { grid-column: span 12; }
   .about-wrap { grid-template-columns: 1fr; }
   .about-img-col { max-width: 300px; margin: 0 auto; }
+  .exp-item { grid-template-columns: 1fr; }
   .contact-wrap { grid-template-columns: 1fr; }
 }
 
@@ -1111,4 +1112,69 @@ footer strong {
   .hero-btns       { flex-direction: column; }
   .about-stats     { gap: 1.5rem; }
   .projects-grid   { display: flex; flex-direction: column; }
+}
+
+/* ── EXPERIENCE ─────────────────────────────────────────────── */
+#experience { background: var(--cream); }
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.exp-item {
+  display: grid;
+  grid-template-columns: minmax(260px, 1fr) 1.4fr;
+  gap: clamp(1.75rem, 5vw, 4rem);
+  align-items: center;
+}
+
+/* Rectangular certificate placeholder */
+.exp-cert {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r);
+  background: linear-gradient(160deg, var(--blush) 0%, var(--mauve-lt) 60%, var(--parchment) 100%);
+  border: 1.5px dashed var(--rose);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--t) var(--ease), box-shadow var(--t) var(--ease);
+}
+.exp-cert:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px rgba(185, 123, 112, .15);
+}
+.exp-cert img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.exp-cert-label {
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--deep-rose);
+  opacity: .6;
+}
+
+.exp-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 400;
+  letter-spacing: -.01em;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.exp-desc {
+  font-size: .97rem;
+  color: var(--text-soft);
+  line-height: 1.85;
+  max-width: 520px;
 }
